@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+
+  <title>CSS Tips</title>
+</head>
+
+<body>
+
+  <div class="container mx-auto">
+    <nav class="text-dark p-4 top-0">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <div></div>
+          <ul class="flex space-x-4 navigation_link">
+            <!-- Add your navigation links here -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mt-8 mb-8">
+      <h1 class="text-4xl font-bold text-center">Beautiful CSS Gradient color examples</h1>
+      <p class="mt-4 text-lg text-center">Design brilliance, one click away. These colors? Just a click and copy magic. Simplifying design, one pixel at a time!</p>
+    </div>
+
+    <div class=" flex flex-col lg:flex-row justify-between items-center mt-4 px-4" style="width: 90%; margin: auto;">
+      <div class="order-2 lg:order-1 flex items-center mb-4 lg:mb-0">
+        <!-- Your navbar goes here -->
+        <div class="navbar hidden" id="linearNavbar">
+          <nav class="flex">
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="linear-starting">linear-starting</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="linear-turning">linear-turning</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="linear-turn">linear-turn</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="linear-tilted">linear-tilted</a>
+          </nav>
+        </div>
+    
+        <div class="navbar hidden" id="radialNavbar">
+          <nav class="flex">
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="type1">type1</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="type2">type2</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="type3">type3</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="type4">type4</a>
+          </nav>
+        </div>
+    
+        <div class="navbar hidden" id="conicNavbar">
+          <nav class="flex">
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="Conic-Gradient1">Conic Gradient1</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="Conic-Gradient2">Conic Gradient2</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="Conic-Gradient3">Conic Gradient3</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="Conic-Gradient4">Conic Gradient4</a>
+          </nav>
+        </div>
+    
+        <div class="navbar hidden" id="repeatingLinearNavbar">
+          <nav class="flex">
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="Repeating-Linear1">Type 1</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="Repeating-Linear2">Type 2</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="Repeating-Linear3">Type 3</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="Repeating-Linear4">Type 4</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="Repeating-Linear5">Type 5</a>
+            <a href="#" class="block px-4 py-2 text-gray-700" data-value="Repeating-Linear6">Type 6</a>
+          </nav>
+        </div>
+      </div>
+    
+      <div class="order-1 lg:order-2 flex items-center">
+        <!-- Your dropdown goes here -->
+        <label for="gradientType" class="mr-2">Gradient Type:</label>
+        <select id="gradientType" class="border border-gray-300 rounded-md p-2" onchange="toggleNavbar()">
+          <option value="default" selected>Default</option>
+          <option value="linear-gradient">Linear Gradient</option>
+          <option value="radial-gradient">Radial Gradient</option>
+          <option value="conic-gradient">Conic Gradient</option>
+          <option value="repeating-linear-gradient">Repeating Linear Gradient</option>
+        </select>
+      </div>
+    </div>
+
+    
+
+    <div class="grid grid-cols-3 grid-rows-4 gap-8 mx-auto" id="boxGrid">
+      <!-- Grid items will be dynamically added here -->
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+  <script>
+
+    
+
+    //toggle drop down code 
+    function toggleNavbar() {
+    var gradientType = document.getElementById('gradientType');
+    var linearNavbar = document.getElementById('linearNavbar');
+    var radialNavbar = document.getElementById('radialNavbar');
+    var conicNavbar = document.getElementById('conicNavbar');
+    var repeatingLinearNavbar = document.getElementById('repeatingLinearNavbar');
+
+    linearNavbar.classList.add('hidden');
+    radialNavbar.classList.add('hidden');
+    conicNavbar.classList.add('hidden');
+    repeatingLinearNavbar.classList.add('hidden');
+
+    if (gradientType.value === 'linear-gradient') {
+      linearNavbar.classList.remove('hidden');
+    } else if (gradientType.value === 'radial-gradient') {
+      radialNavbar.classList.remove('hidden');
+    } else if (gradientType.value === 'conic-gradient') {
+      conicNavbar.classList.remove('hidden');
+    } else if (gradientType.value === 'repeating-linear-gradient') {
+      repeatingLinearNavbar.classList.remove('hidden');
+    }
+  } 
+
+  document.addEventListener('DOMContentLoaded', function () {
+  const boxGrid = document.getElementById('boxGrid');
+  const gradientTypeSelect = document.getElementById('gradientType');
+  const linearNavbar = document.getElementById('linearNavbar');
+  const radialNavbar = document.getElementById('radialNavbar');
+  const conicNavbar = document.getElementById('conicNavbar');
+  const repeatingLinearNavbar = document.getElementById('repeatingLinearNavbar');
+
+  // Generate colors when the page loads
+  generateColors(50, 'default'); // Default to 'default' gradient type
+
+  // Listen for changes in the select dropdown
+  gradientTypeSelect.addEventListener('change', function () {
+    const selectedGradientType = gradientTypeSelect.value;
+
+    // Remove existing grid items
+    while (boxGrid.firstChild) {
+      boxGrid.removeChild(boxGrid.firstChild);
+    }
+
+    // Generate colors based on the selected gradient type
+    generateColors(600, selectedGradientType);
+  });
+
+  // Listen for click events on the linearNavbar links
+  linearNavbar.addEventListener('click', function (event) {
+    if (event.target.tagName === 'A') {
+      event.preventDefault();
+
+      // Get the data-value attribute of the clicked link
+      const selectedGradientType = event.target.getAttribute('data-value');
+
+      // Remove existing grid items
+      while (boxGrid.firstChild) {
+        boxGrid.removeChild(boxGrid.firstChild);
+      }
+
+      // Generate colors based on the selected gradient type
+      generateColors(600, selectedGradientType);
+    }
+  });
+
+  // Listen for click events on the radialNavbar links
+  radialNavbar.addEventListener('click', function (event) {
+    if (event.target.tagName === 'A') {
+      event.preventDefault();
+
+      // Get the data-value attribute of the clicked link
+      const selectedGradientType = event.target.getAttribute('data-value');
+
+      // Remove existing grid items
+      while (boxGrid.firstChild) {
+        boxGrid.removeChild(boxGrid.firstChild);
+      }
+
+      // Generate colors based on the selected gradient type
+      generateColors(600, selectedGradientType);
+    }
+  });
+
+  // Listen for click events on the conicNavbar links
+  conicNavbar.addEventListener('click', function (event) {
+    if (event.target.tagName === 'A') {
+      event.preventDefault();
+
+      // Get the data-value attribute of the clicked link
+      const selectedGradientType = event.target.getAttribute('data-value');
+
+      // Remove existing grid items
+      while (boxGrid.firstChild) {
+        boxGrid.removeChild(boxGrid.firstChild);
+      }
+
+      // Generate colors based on the selected gradient type
+      generateColors(600, selectedGradientType);
+    }
+  });
+
+  // Listen for click events on the repeatingLinearNavbar links
+  repeatingLinearNavbar.addEventListener('click', function (event) {
+    if (event.target.tagName === 'A') {
+      event.preventDefault();
+
+      // Get the data-value attribute of the clicked link
+      const selectedGradientType = event.target.getAttribute('data-value');
+
+      // Remove existing grid items
+      while (boxGrid.firstChild) {
+        boxGrid.removeChild(boxGrid.firstChild);
+      }
+
+      // Generate colors based on the selected gradient type
+      generateColors(600, selectedGradientType);
+    }
+  });
+
+  function generateColors(count, type = 'default') {
+    // Add new grid items based on the selected gradient type
+    for (let i = 1; i <= count; i++) {
+      const gridItem = document.createElement('div');
+      gridItem.classList.add('grid-item', `color${i}`);
+      gridItem.style.backgroundImage = getGradientStyle(type, i);
+      gridItem.innerHTML = `
+        <div class="relative">
+          <div class="flex items-center justify-center h-full mx-auto">
+            <div class="text-1xl center-text">#${i}</div>
+          </div>
+        </div>
+      `;
+      boxGrid.appendChild(gridItem);
+    }
+  }
+
+  function getGradientStyle(type, index) {
+    // Generate random RGB values
+    const randomColor1 = Math.floor(Math.random() * 256);
+    const randomColor2 = Math.floor(Math.random() * 256);
+    const randomColor3 = Math.floor(Math.random() * 256);
+
+    // Ensure two distinct color stops for linear-gradient
+    const colorStop1 = `rgb(${randomColor1}, ${randomColor2}, ${randomColor3})`;
+    const colorStop2 = `rgb(${randomColor2}, ${randomColor3}, ${randomColor1})`;
+    const colorStop3 = `rgb(${randomColor3}, ${randomColor1}, ${randomColor2})`;
+
+    // Generate random direction
+    const directions = ['left', 'right', 'top', 'bottom'];
+    const randomDirection1 = directions[Math.floor(Math.random() * directions.length)];
+    const randomDirection3 = directions[Math.floor(Math.random() * directions.length)];
+
+    // Generate random angles between 1 and 1500 degrees
+    const randomAngle1 = Math.floor(Math.random() * 1500) + 1;
+    const randomAngle2 = Math.floor(Math.random() * 1500) + 1;
+    const randomAngle3 = Math.floor(Math.random() * 1500) + 1;
+
+    // Generate random values between 0.1 and 0.100 for angles
+    const randomValue1 = (Math.random() * (0.100 - 0.1) + 0.1).toFixed(3);
+
+    //Generate random value between 1 to 50
+    const randomNum1 = Math.floor(Math.random() * (50 - 1 + 1)) + 1;
+    const randomNum2 = Math.floor(Math.random() * (50 - 1 + 1)) + 1;
+
+    // -----radial-gradient ----code is here--- 
+    const radial = ["closest-side", "closest-corner", "farthest-side", "farthest-corner"]
+    const randomRadial = radial[Math.floor(Math.random() * radial.length)];
+    const radialType = ["circle", "ellipse"]
+    const randomType = radialType[Math.floor(Math.random() * radialType.length)];
+
+    switch (type) {
+      case 'linear-gradient':
+        return `linear-gradient(to ${randomDirection1}, ${colorStop1}, ${colorStop2})`;
+      case 'linear-starting':
+        return `linear-gradient(${randomAngle1}deg, ${colorStop1}, ${colorStop2})`;
+      case 'linear-turning':
+        return `linear-gradient(${randomAngle2}deg, ${colorStop1}, ${colorStop2}, ${randomAngle3}%, ${colorStop3})`;
+      case 'linear-turn':
+        return `linear-gradient(${randomValue1}turn, ${colorStop1}, ${randomAngle1}%, ${colorStop3})`;
+      case 'linear-tilted':
+        return `linear-gradient(${randomAngle2}deg, ${colorStop1} 0 ${randomAngle2}%, ${colorStop2} ${randomAngle3}% ${randomAngle1}%)`;
+      // ----here linear-gradient is over now----- 
+      case 'type1':
+        return `radial-gradient(${colorStop1}, ${colorStop3})`;
+      case 'type2':
+        return `radial-gradient(${randomRadial}, ${colorStop1}, ${colorStop3}, ${colorStop3})`;
+      case 'type3':
+        return `radial-gradient(${randomType} at ${randomAngle1}%, ${colorStop1}, ${colorStop3} ${randomAngle3}%, ${colorStop2} 75%, #333 75%)`;
+      case 'type4':
+        return `radial-gradient(${colorStop1}, ${colorStop3})`;
+      //here to conic-gradient code is here
+      case 'Conic-Gradient1':
+        return `conic-gradient(${colorStop1}, ${colorStop2}, ${colorStop3}, ${colorStop1}, ${colorStop2})`;
+      case 'Conic-Gradient2':
+        return `conic-gradient(from ${randomValue1}turn at ${randomAngle1}% ${randomAngle2}%, ${colorStop1}, ${randomAngle2}deg, ${colorStop3}, ${randomAngle3}deg, ${colorStop2})`;
+      case 'Conic-Gradient3':
+        return `conic-gradient(from ${randomNum1}rad at ${randomAngle1}% ${randomAngle3}%, ${colorStop1}, ${colorStop2})`;
+      case 'Conic-Gradient4':
+        return `conic-gradient( ${colorStop1} ${randomAngle1}deg, ${colorStop2} ${randomAngle3}deg ${randomAngle1}deg, ${colorStop3} ${randomAngle1}deg ${randomAngle3}deg, ${colorStop1} ${randomAngle1}deg ${randomAngle2}deg, ${colorStop2} ${randomAngle1}deg ${randomAngle3}deg, ${colorStop3} ${randomAngle2}deg)`;
+
+      //repeating-linear-gradient code is here
+      case 'Repeating-Linear1':
+        return `repeating-linear-gradient(${colorStop1}, ${colorStop3} ${randomNum1}px, ${colorStop2} ${randomNum2}px, ${colorStop1} ${randomNum1}px)`;
+      case 'Repeating-Linear2':
+        return `repeating-linear-gradient(${randomAngle1}deg, ${colorStop1}, ${colorStop2} ${randomAngle1}%, ${colorStop3} ${randomAngle1}%)`;
+      case 'Repeating-Linear3':
+        return `repeating-linear-gradient(transparent, ${colorStop1} ${randomNum1}px), repeating-linear-gradient(${randomValue1}turn, transparent, ${colorStop3} ${randomNum2}px)`;
+        case 'Repeating-Linear4':
+        return `repeating-conic-gradient(${colorStop1} ${randomAngle2}% ${randomAngle3}%, ${colorStop2} ${randomAngle1}% ${randomAngle3}%)`;
+      case 'Repeating-Linear5':
+        return `linear-gradient(${randomAngle1}deg, ${colorStop1} ${randomAngle2}%, transparent 0 ${randomAngle2}%, ${colorStop3} 0), conic-gradient(from ${randomAngle3}deg at ${randomAngle2}% ${randomAngle2}%, ${colorStop1} ${randomAngle2}deg, rgba(71,75,255,0.75) ${randomAngle2}% ${randomAngle1}deg, rgba(71,75,255,0.5) ${randomAngle2}%)`;
+      case 'Repeating-Linear6':
+        return `radial-gradient(${randomType} ${randomRadial} at ${randomNum2}px ${randomNum1}px, ${colorStop1}, ${colorStop3} ${randomAngle2}%, ${colorStop1} ${randomAngle1}%)`;
+
+      case 'repeating-linear-gradient':
+        return `repeating-linear-gradient(to ${randomDirection1}, ${colorStop1}, ${colorStop2})`;
+      case 'radial-gradient':
+        return `radial-gradient(circle, ${colorStop1}, ${colorStop2})`;
+      case 'repeating-radial-gradient':
+        return `repeating-radial-gradient(${randomType}, ${colorStop1}, ${colorStop2})`;
+      case 'conic-gradient':
+        return `conic-gradient(from ${randomAngle1}deg at ${randomAngle1}% ${randomAngle2}%, ${colorStop1}, ${colorStop2})`;
+      case 'default':
+      default:
+        return `linear-gradient(to ${randomDirection1}, ${colorStop1}, ${colorStop2})`; // Default color
+    }
+  }
+
+ // Function to copy text to clipboard
+ // Function to copy text to clipboard
+function copyToClipboard(text) {
+  const textarea = document.createElement('textarea');
+  textarea.value = text;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+}
+
+// Listen for click events on grid items
+boxGrid.addEventListener('click', function (event) {
+  const clickedItem = event.target.closest('.grid-item');
+
+  if (clickedItem) {
+    const gradientStyle = clickedItem.style.backgroundImage;
+
+    // Copy the gradient style to the clipboard
+    copyToClipboard(gradientStyle);
+
+    // Display 'Copied!' message inside the grid item
+    displayCopiedMessage(clickedItem);
+  }
+});
+
+// Function to display 'Copied!' message inside the grid item
+// Function to display 'Copied!' message inside the grid item
+function displayCopiedMessage(gridItem) {
+  // Check if there's already a message element, remove it
+  const existingMessage = gridItem.querySelector('.copied-message');
+  if (existingMessage) {
+    existingMessage.remove();
+  }
+
+  // Create a new message element
+  const messageElement = document.createElement('div');
+  messageElement.classList.add('copied-message');
+  messageElement.textContent = 'Copied!';
+  
+  // Apply styling for centering and appearance
+  messageElement.style.position = 'absolute';
+  messageElement.style.top = '50%';
+  messageElement.style.left = '50%';
+  messageElement.style.transform = 'translate(-50%, -50%)';
+  messageElement.style.backgroundColor = 'white';
+  messageElement.style.border = '1px dotted black';
+  messageElement.style.borderRadius = '10px'; // Added border radius
+  messageElement.style.color = 'black';
+  messageElement.style.padding = '10px'; // Add padding for better visibility
+  
+  // Append the message element to the grid item
+  gridItem.appendChild(messageElement);
+
+  // Optionally, you can remove the message after a certain delay
+  setTimeout(() => {
+    messageElement.remove();
+  }, 500); // Adjust the delay as needed (e.g., 2000 milliseconds = 2 seconds)
+}
+//code is over now
+
+});
+
+
+  </script>
+
+</body>
+
+</html>
