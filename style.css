@@ -1,0 +1,632 @@
+
+body{
+    background-color: #F5F5F5;
+}
+/* Copy Message styling */
+.copyMessage {
+    position: absolute;
+    background-color: white;
+    padding: 8px 30px;
+    border-radius: 3px;
+    display: none;
+    z-index: 2; /* Make it appear on top of the button */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0px solid red;
+}
+.container_grid {
+    background-color: #fff;
+    width: 95%;
+    margin: 0 auto;
+    padding: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0px 0px;
+   
+}
+.container{
+    border: 0px solid red;
+}
+.navigation_link li{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.grid-item {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-bottom: 16px; /* Adjust the margin bottom to increase the gap */
+}
+
+.grid {
+    grid-template-rows: repeat(1, 1fr); /* Set the number of rows to 1 */
+    grid-template-columns: repeat(4, 1fr); /* Set the number of columns to 4 */
+    gap: 20px 40px; /* Adjust the gap between grid items */
+    border: 0px solid red;
+    margin: 2.5em;
+}
+
+
+
+
+
+.grid-item {
+    width: 230px;
+    height: 220px;
+    background-color: white;
+    padding: 16px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    position: relative;
+    margin: 40px auto;
+    border-radius: 10px;
+    cursor: pointer;
+} 
+  
+#copied-box-shadow {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 8px 10px 8px 10px;
+    display: block;
+    z-index: 99;
+    margin-top: 6.5%;
+    background-color: red;
+    border-radius: 10px;
+    border: 1px dotted black;
+  }
+  .center-text {
+    text-align: center;
+    border: 0px solid red;
+    margin-left: 80px;
+  }
+
+/* -------box----shadow css is here----- */
+
+/* Generated Box Shadows for Grid Items 1 to 100 */
+
+/* ---grid item 1 --- */
+.grid1 {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* ---grid item 2 --- */
+.grid2 {
+    box-shadow: 0 0 10px rgba(31, 119, 180, 0.5), 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---grid item 3 --- */
+.grid3 {
+    box-shadow: 0 0 10px rgba(178, 223, 219, 0.7), 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ---grid item 4 --- */
+.grid4 {
+    box-shadow: 0 2px 4px rgba(255, 193, 7, 0.3), 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ---grid item 5 --- */
+.grid5 {
+    box-shadow: 0 4px 8px rgba(255, 87, 34, 0.4), 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+/* ---grid item 6 --- */
+.grid6 {
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.4), 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ---grid item 7 --- */
+.grid7 {
+    box-shadow: 0 2px 4px rgba(103, 58, 183, 0.5), 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ---grid item 8 --- */
+.grid8 {
+    box-shadow: 0 2px 4px rgba(233, 30, 99, 0.5), 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ---grid item 9 --- */
+.grid9 {
+    box-shadow: 0 2px 4px rgba(63, 81, 181, 0.5), 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ---grid item 10 --- */
+.grid10 {
+    box-shadow: 0 2px 4px rgba(255, 235, 59, 0.5), 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ---grid item 11 --- */
+.grid11 {
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.3), 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ---grid item 12 --- */
+.grid12 {
+    box-shadow: 0 0 15px rgba(0, 128, 255, 0.6), 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ---grid item 13 --- */
+.grid13 {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ---grid item 14 --- */
+.grid14 {
+    box-shadow: 0 0 25px rgba(255, 69, 0, 0.4), 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ---grid item 15 --- */
+.grid15 {
+    box-shadow: 0 0 2px rgba(255, 5, 255, 0.5), 0 7px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ---grid item 16 --- */
+.grid16 {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* ---grid item 17 --- */
+.grid17 {
+    box-shadow: 0 0 10px rgba(31, 119, 180, 0.5), 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---grid item 18 --- */
+.grid18 {
+    box-shadow: 0 0 10px rgba(178, 223, 219, 0.7), 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ---grid item 19 --- */
+.grid19 {
+    box-shadow: 0 2px 4px rgba(255, 193, 7, 0.3), 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ---grid item 20 --- */
+.grid20 {
+    box-shadow: rgba(0, 128, 255, 0.6) 0px 0px 15px 0px, rgba(0, 0, 0, 0.2) 0px 4px 10px 0px;
+}
+
+/* ---grid item 21 --- */
+.grid21 {
+    box-shadow: rgba(30, 144, 255, 0.6) 0px 0px 15px 0px, rgba(0, 0, 0, 0.2) 0px 4px 10px 0px;
+}
+
+/* ---grid item 22 --- */
+.grid22 {
+    box-shadow: rgba(60, 160, 255, 0.6) 0px 0px 15px 0px, rgba(0, 0, 0, 0.2) 0px 4px 10px 0px;
+}
+
+/* ---grid item 23 --- */
+.grid23 {
+    box-shadow: rgba(90, 176, 255, 0.6) 0px 0px 15px 0px, rgba(255, 0, 0, 0.2) 0px 4px 10px 0px;
+}
+
+/* ---grid item 24 --- */
+.grid24 {
+    box-shadow: rgba(120, 192, 255, 0.6) 0px 0px 15px 0px, rgba(0, 255, 0, 0.2) 0px 4px 10px 0px;
+}
+
+/* ---grid item 25 --- */
+.grid25 {
+    box-shadow: rgba(150, 208, 255, 0.6) 0px 0px 15px 0px, rgba(255, 255, 0, 0.2) 0px 4px 10px 0px;
+}
+
+/* ---grid item 26 --- */
+.grid26 {
+    box-shadow: rgba(180, 224, 255, 0.6) 0px 0px 15px 0px, rgba(255, 0, 255, 0.2) 0px 4px 10px 0px;
+}
+
+/* ---grid item 27 --- */
+.grid27 {
+    box-shadow: rgba(210, 240, 255, 0.6) 0px 0px 15px 0px, rgba(0, 255, 255, 0.2) 0px 4px 10px 0px;
+}
+
+/* ---grid item 28 --- */
+.grid28 {
+    box-shadow: rgba(240, 255, 255, 0.6) 0px 0px 15px 0px, rgba(128, 0, 128, 0.2) 0px 4px 10px 0px;
+}
+
+/* ---grid item 29 --- */
+.grid29 {
+    box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 15px 0px, rgba(255, 165, 0, 0.2) 0px 4px 10px 0px;
+}
+
+
+
+
+/* ---grid item 30 --- */
+.grid30 {
+    box-shadow: rgba(255, 0, 0, 0.3) 0px 6px 12px 0px, rgba(0, 0, 0, 0.1) 0px 2px 6px 0px;
+}
+
+/* ---grid item 31 --- */
+.grid31 {
+    box-shadow: rgba(255, 85, 85, 0.3) 0px 6px 12px 0px, rgba(0, 0, 0, 0.1) 0px 2px 6px 0px;
+}
+
+/* ---grid item 32 --- */
+.grid32 {
+    box-shadow: rgba(255, 170, 85, 0.3) 0px 6px 12px 0px, rgba(0, 0, 0, 0.1) 0px 2px 6px 0px;
+}
+
+/* ---grid item 33 --- */
+.grid33 {
+    box-shadow: rgba(255, 255, 85, 0.3) 0px 6px 12px 0px, rgba(0, 0, 0, 0.1) 0px 2px 6px 0px;
+}
+
+/* ---grid item 34 --- */
+.grid34 {
+    box-shadow: rgba(170, 255, 85, 0.3) 0px 6px 12px 0px, rgba(0, 0, 0, 0.1) 0px 2px 6px 0px;
+}
+
+/* ---grid item 35 --- */
+.grid35 {
+    box-shadow: rgba(85, 255, 85, 0.3) 0px 6px 12px 0px, rgba(0, 0, 0, 0.1) 0px 2px 6px 0px;
+}
+
+/* ---grid item 36 --- */
+.grid36 {
+    box-shadow: rgba(85, 255, 170, 0.3) 0px 6px 12px 0px, rgba(0, 0, 0, 0.1) 0px 2px 6px 0px;
+}
+
+/* ---grid item 37 --- */
+.grid37 {
+    box-shadow: rgba(85, 255, 255, 0.3) 0px 6px 12px 0px, rgba(0, 0, 0, 0.1) 0px 2px 6px 0px;
+}
+
+/* ---grid item 38 --- */
+.grid38 {
+    box-shadow: rgba(85, 170, 255, 0.3) 0px 6px 12px 0px, rgba(0, 0, 0, 0.1) 0px 2px 6px 0px;
+}
+
+/* ---grid item 39 --- */
+.grid39 {
+    box-shadow: rgba(85, 85, 255, 0.3) 0px 6px 12px 0px, rgba(0, 0, 0, 0.1) 0px 2px 6px 0px;
+}
+
+/* ---grid item 40 --- */
+.grid40 {
+    box-shadow: rgba(191, 202, 217, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
+}
+
+/* ---grid item 41 --- */
+.grid41 {
+    box-shadow: rgba(205, 180, 219, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
+}
+
+/* ---grid item 42 --- */
+.grid42 {
+    box-shadow: rgba(191, 210, 202, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
+}
+
+/* ---grid item 43 --- */
+.grid43 {
+    box-shadow: rgba(220, 233, 203, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
+}
+
+/* ---grid item 44 --- */
+.grid44 {
+    box-shadow: rgba(216, 191, 216, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
+}
+
+/* ---grid item 45 --- */
+.grid45 {
+    box-shadow: rgba(209, 231, 240, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
+}
+
+/* ---grid item 46 --- */
+.grid46 {
+    box-shadow: rgba(199, 201, 195, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
+}
+
+/* ---grid item 47 --- */
+.grid47 {
+    box-shadow: rgba(186, 174, 171, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
+}
+
+/* ---grid item 48 --- */
+.grid48 {
+    box-shadow: rgba(255, 246, 143, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
+}
+
+/* ---grid item 49 --- */
+.grid49 {
+    box-shadow: rgba(255, 0, 0, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 50 --- */
+.grid50 {
+    box-shadow: rgba(255, 128, 0, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 51 --- */
+.grid51 {
+    box-shadow: rgba(255, 255, 0, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 52 --- */
+.grid52 {
+    box-shadow: rgba(0, 255, 0, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 53 --- */
+.grid53 {
+    box-shadow: rgba(0, 128, 255, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 54 --- */
+.grid54 {
+    box-shadow: rgba(128, 0, 255, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 55 --- */
+.grid55 {
+    box-shadow: rgba(255, 0, 255, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 56 --- */
+.grid56 {
+    box-shadow: rgba(0, 255, 255, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 57 --- */
+.grid57 {
+    box-shadow: rgba(128, 128, 128, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 58 --- */
+.grid58 {
+    box-shadow: rgba(255, 255, 255, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 59 --- */
+.grid59 {
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+
+/* ---grid item 60 --- */
+.grid60 {
+    box-shadow: rgba(255, 0, 0, 0.1) 0px 4px 6px 0px, rgba(255, 0, 0, 0.08) 0px 1px 3px 0px;
+}
+
+/* ---grid item 61 --- */
+.grid61 {
+    box-shadow: rgba(255, 128, 0, 0.1) 0px 4px 6px 0px, rgba(255, 128, 0, 0.08) 0px 1px 3px 0px;
+}
+
+/* ---grid item 62 --- */
+.grid62 {
+    box-shadow: rgba(255, 255, 0, 0.1) 0px 4px 6px 0px, rgba(255, 255, 0, 0.08) 0px 1px 3px 0px;
+}
+
+/* ---grid item 63 --- */
+.grid63 {
+    box-shadow: rgba(0, 255, 0, 0.1) 0px 4px 6px 0px, rgba(0, 255, 0, 0.08) 0px 1px 3px 0px;
+}
+
+/* ---grid item 64 --- */
+.grid64 {
+    box-shadow: rgba(0, 128, 255, 0.1) 0px 4px 6px 0px, rgba(0, 128, 255, 0.08) 0px 1px 3px 0px;
+}
+
+/* ---grid item 65 --- */
+.grid65 {
+    box-shadow: rgba(128, 0, 255, 0.1) 0px 4px 6px 0px, rgba(128, 0, 255, 0.08) 0px 1px 3px 0px;
+}
+
+/* ---grid item 66 --- */
+.grid66 {
+    box-shadow: rgba(255, 0, 255, 0.1) 0px 4px 6px 0px, rgba(255, 0, 255, 0.08) 0px 1px 3px 0px;
+}
+
+/* ---grid item 67 --- */
+.grid67 {
+    box-shadow: rgba(0, 255, 255, 0.1) 0px 4px 6px 0px, rgba(0, 255, 255, 0.08) 0px 1px 3px 0px;
+}
+
+/* ---grid item 68 --- */
+.grid68 {
+    box-shadow: rgba(128, 128, 128, 0.1) 0px 4px 6px 0px, rgba(128, 128, 128, 0.08) 0px 1px 3px 0px;
+}
+
+/* ---grid item 69 --- */
+.grid69 {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px 0px, rgba(255, 255, 255, 0.08) 0px 1px 3px 0px;
+}
+
+/* ---grid item 70 --- */
+.grid70 {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 0px, rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
+}
+
+/* ---grid item 71 --- */
+.grid71 {
+    box-shadow: rgba(192, 192, 192, 0.1) 0px 4px 6px 0px, rgba(192, 192, 192, 0.08) 0px 1px 3px 0px;
+}
+
+
+/* ---grid item 72 --- */
+.grid72 {
+    box-shadow: 0 15px 20px rgba(50, 50, 93, 0.25), 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ---grid item 73 --- */
+.grid73 {
+    box-shadow: 0 20px 25px rgba(80, 80, 120, 0.3), 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ---grid item 74 --- */
+.grid74 {
+    box-shadow: 0 25px 30px rgba(120, 120, 180, 0.35), 0 12px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* ---grid item 75 --- */
+.grid75 {
+    box-shadow: 0 30px 35px rgba(70, 70, 110, 0.4), 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ---grid item 76 --- */
+.grid76 {
+    box-shadow: 0 35px 40px rgba(90, 90, 140, 0.45), 0 18px 28px rgba(0, 0, 0, 0.4);
+}
+
+/* ---grid item 77 --- */
+.grid77 {
+    box-shadow: 0 40px 45px rgba(110, 110, 160, 0.5), 0 22px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* ---grid item 78 --- */
+.grid78 {
+    box-shadow: 0 45px 50px rgba(60, 60, 100, 0.55), 0 26px 36px rgba(0, 0, 0, 0.6);
+}
+
+/* ---grid item 79 --- */
+.grid79 {
+    box-shadow: 0 50px 55px rgba(130, 130, 190, 0.6), 0 30px 40px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* ---grid item 80 --- */
+.grid80 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* ---grid item 81 --- */
+.grid81 {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* ---grid item 82 --- */
+.grid82 {
+    box-shadow: rgba(255, 0, 0, 0.7) 0px 0px 10px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 83 --- */
+.grid83 {
+    box-shadow: rgba(0, 128, 255, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 84 --- */
+.grid84 {
+    box-shadow: rgba(255, 255, 0, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 85 --- */
+.grid85 {
+    box-shadow: rgba(255, 0, 255, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 86 --- */
+.grid86 {
+    box-shadow: rgba(0, 255, 0, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 87 --- */
+.grid87 {
+    box-shadow: rgba(128, 0, 128, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 88 --- */
+.grid88 {
+    box-shadow: rgba(0, 255, 255, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 89 --- */
+.grid89 {
+    box-shadow: rgba(255, 128, 0, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+}
+
+/* ---grid item 90 --- */
+.grid90 {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+/* ---grid item 91 --- */
+.grid91 {
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+/* ---grid item 92 --- */
+.grid92 {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+/* ---grid item 93 --- */
+.grid93 {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+/* ---grid item 94 --- */
+.grid94 {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+/* ---grid item 95 --- */
+.grid95 {
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+/* ---grid item 96 --- */
+.grid96 {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+/* ---grid item 97 --- */
+.grid97 {
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
+/* ---grid item 98 --- */
+.grid98 {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* ---grid item 99 --- */
+.grid99 {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+/* ---grid item 100 --- */
+.grid100 {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+
+/* ---gadient css is here------ */
+
+  
+  
+  /* Continue the pattern up to color100 */
+
+
+
+
+/* Media Query for smaller screens (Mobile) */
+@media screen and (max-width: 576px) {
+    .grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    /* Additional responsive styles for mobile */
+}
+
+/* Media Query for medium screens (Tablet) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+
+    /* Additional responsive styles for tablets */
+}
+
+/* Media Query for large screens (Desktop) */
+@media screen and (min-width: 769px) {
+    /* Additional responsive styles for larger screens */
+}
